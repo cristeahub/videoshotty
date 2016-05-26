@@ -30,7 +30,8 @@ function bindGifferToVideoElement(videoElement) {
   });
 
   var element = document.createElement('div');
-  element.textContent = "KNAPP";
+  element.textContent = "X";
+  element.style.cssText = "cursor: pointer;padding: 10px;background: #DCC7DC;";
   element.onClick = function() {
     console.log("STUFUAIFOUAOIFU");
   };
