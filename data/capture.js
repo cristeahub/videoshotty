@@ -40,8 +40,7 @@ function bindGifferToVideoElement(videoElement) {
   element.style.fontFamily = '"Helvetica Neue",Helvetica,Arial,sans-serif';
 
   element.addEventListener('click', function() {
-    console.log("STUFUAIFOUAOIFU");
-    captureGif(frames, current_frame % FRAMES_TO_CAPTURE, canvas.width, canvas.height);
+    openModal();
   });
 
   videoElement.parentElement.appendChild(element);
