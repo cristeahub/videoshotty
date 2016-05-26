@@ -1,3 +1,3 @@
 .PHONY: run
 run:
-	jpm run -b $(which firefox)
+	jpm run -b $$(which firefox)
