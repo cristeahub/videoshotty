@@ -1,5 +1,5 @@
 var buttons = require('sdk/ui/button/action');
-var tabs = require("sdk/tabs");
+var pageMod = require("sdk/page-mod");
 
 var button = buttons.ActionButton({
   id: "videoshotty-toolbar-button",
@@ -13,5 +13,8 @@ var button = buttons.ActionButton({
 });
 
 function handleClick(state) {
-  tabs.open("https://www.google.com/");
+  pageMod.PageMod({
+    include: '*',
+    contentScriptFile: "./capture.js"
+  });
 }
