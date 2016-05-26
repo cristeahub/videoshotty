@@ -13,5 +13,7 @@ var button = buttons.ActionButton({
 
 pageMod.PageMod({
   include: '*',
-  contentScriptFile: ["./capture.js", "./textOverlay.js", "./conversion.js", "./gif.js", "./gif.worker.js"]
+  contentScriptFile: [
+    "./capture.js", "./textOverlay.js", "./conversion.js",
+    "./gif.js", "./gif.worker.js", "./modal.js"]
 });
