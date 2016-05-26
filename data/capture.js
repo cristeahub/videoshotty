@@ -1,4 +1,4 @@
-var TARGET_WIDTH = 640;
+var TARGET_WIDTH = 360;
 
 self.port.on("bindListeners", function(tag) {
   var videoElements = document.querySelectorAll("video");
