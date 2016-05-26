@@ -33,9 +33,9 @@ function createGifFromImageData(data) {
     quality: 10
   });
 
-  for(int i = 0; i < data.length; i++) {
+  for(var i = 0; i < data.length; i++) {
     gif.addFrame(data[i]);
-  }
+  };
 
   gif.on('finished', function() {
     console.log('we are done creating your gif');
