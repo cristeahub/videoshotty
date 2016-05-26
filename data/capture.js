@@ -32,9 +32,9 @@ function bindGifferToVideoElement(videoElement) {
   var element = document.createElement('div');
   element.textContent = "X";
   element.style.cssText = "cursor: pointer;padding: 10px;background: #DCC7DC;";
-  element.onClick = function() {
+  element.addEventListener('click', function() {
     console.log("STUFUAIFOUAOIFU");
-  };
+  });
 
   document.body.appendChild(element);
 }
