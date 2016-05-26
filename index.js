@@ -15,6 +15,6 @@ var button = buttons.ActionButton({
 function handleClick(state) {
   pageMod.PageMod({
     include: '*',
-    contentScriptFile: "./capture.js"
+    contentScriptFile: ["./capture.js", "./textOverlay.js"]
   });
 }
