@@ -29,12 +29,19 @@ function bindGifferToVideoElement(videoElement) {
     requestAnimationFrame(renderLoop);
   });
 
-  var element = document.createElement('div');
-  element.textContent = "X";
-  element.style.cssText = "cursor: pointer;padding: 10px;background: #DCC7DC;";
+  var element = document.createElement('a');
+  element.textContent = "Capture";
+  element.style.padding = "10px";
+  element.style.margin = "5px";
+  element.style.background = "#e7832a";
+  element.style.zIndex = 42424242;
+  element.style.position = "relative";
+  element.style.display = "inline-block";
+  element.style.fontFamily = '"Helvetica Neue",Helvetica,Arial,sans-serif';
+
   element.addEventListener('click', function() {
     console.log("STUFUAIFOUAOIFU");
   });
 
-  document.body.appendChild(element);
+  videoElement.parentElement.appendChild(element);
 }
