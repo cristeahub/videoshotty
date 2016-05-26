@@ -5,9 +5,9 @@ var button = buttons.ActionButton({
   id: "videoshotty-toolbar-button",
   label: "Videoshotty!",
   icon: {
-    "16": "./icon-16.png",
-    "32": "./icon-32.png",
-    "64": "./icon-64.png"
+    "16": "./videoshotty-16.png",
+    "32": "./videoshotty-32.png",
+    "64": "./videoshotty-64.png"
   },
   onClick: handleClick
 });
