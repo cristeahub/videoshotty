@@ -4,7 +4,7 @@ function openModal() {
 
   var modal = document.getElementById('modal');
 
-  document.getElementById('go-button').addEventListner('click', function(e) {
+  document.getElementById('go-button').addEventListener('click', function(e) {
     var topText = document.getElementById('top-text').value;
     var bottomText = document.getElementById('bottom-text').value;
 
@@ -13,7 +13,7 @@ function openModal() {
     console.log('bottom text ' + bottomText);
   });
 
-  document.getElementById('cancel-button').addEventListner('click', function(e) {
+  document.getElementById('cancel-button').addEventListener('click', function(e) {
     modal.parentNode.removeChild(modal);
   });
 }
