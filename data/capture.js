@@ -38,6 +38,7 @@ function bindGifferToVideoElement(videoElement) {
   element.style.position = "relative";
   element.style.display = "inline-block";
   element.style.fontFamily = '"Helvetica Neue",Helvetica,Arial,sans-serif';
+  element.style.cursor = "pointer";
 
   element.addEventListener('click', function() {
     console.log("STUFUAIFOUAOIFU");
