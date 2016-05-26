@@ -12,9 +12,11 @@ var button = buttons.ActionButton({
   onClick: handleClick
 });
 
+pageMod.PageMod({
+  include: '*',
+  contentScriptFile: ["./capture.js", "./textOverlay.js", "./conversion.js", "./gif.js", "./gif.worker.js"]
+});
+
 function handleClick(state) {
-  pageMod.PageMod({
-    include: '*',
-    contentScriptFile: ["./capture.js", "./textOverlay.js"]
-  });
+  console.log("yo");
 }
