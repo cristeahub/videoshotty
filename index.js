@@ -7,7 +7,7 @@ pageMod.PageMod({
   include: '*',
   contentScriptFile: [
     "./capture.js", "./textOverlay.js", "./conversion.js",
-    "./gif.js", "./gif.worker.js", "./modal.js"],
+    "./modal.js", "./LZWEncoder.js", "./NeuQuant.js", "./GIFEncoder.js", "./b64.js"],
   onAttach: function(_worker) {
     // Apparently there's one of these per tab,
     // so should probably be stored in a hashmap or something

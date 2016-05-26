@@ -23,3 +23,16 @@ function createGifFromImageData(data) {
 
   gif.render();
 }
+
+function encodeGif(data, width, height) {
+  var encoder = new GIFEncoder();
+  encoder.start();
+  encoder.setRepeat(0);
+  encoder.setFrameRate(60);
+  encoder.setSize(width, height);
+  for (var i = 0; i < data.length; i++) {
+    encoder.addFrame(data[i].data, true);
+  }
+  encoder.finish();
+  return encoder.stream().getData();
+}
